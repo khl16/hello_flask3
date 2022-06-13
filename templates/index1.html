@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        
+        #box {
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        border: 5px solid black;
+        margin: 10px;
+       
+        }
+        .coun{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+
+        .big{
+            display: flex;
+          
+            
+	
+        }
+
+    </style>
+
+<div class="coun">
+
+            <h1>Welcome!</h1>
+                <div class="big">
+                    {% for i in range(0,num_times): %}
+                    <Box id="box"></Box>
+                    {% endfor %}
+            
+                </div>
+        
+                
+        
+        </div> 
+        
+</body>
+</html>
+
